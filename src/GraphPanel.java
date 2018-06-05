@@ -84,11 +84,9 @@ public class GraphPanel extends JPanel {
         frame.add(equality, "North");
         frame.add(mainPanel, "Center");
 
-        tabs.addTab("Graph solver", frame);
-        tabs.addTab("Program variables", new VariablePanel());
-
-        JFrame jfr = new JFrame("Graphs 2.0-ALPHA");
-        jfr.setContentPane(tabs);
+        JFrame jfr = new JFrame("Graphs");
+        jfr.setContentPane(frame);
+        jfr.pack();
         jfr.setLocationRelativeTo(null);
         jfr.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jfr.setVisible(true);
